@@ -4,5 +4,5 @@ services:
   - docker
 
 script:
-  - build.sh
-  - push.sh
+  - bash build.sh
+  - bash push.sh
