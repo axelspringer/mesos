@@ -7,3 +7,6 @@
 Mesos
 
 http://mesos.apache.org/
+
+# License
+[MIT](/LICENSE)

@@ -10,14 +10,6 @@ push() {
   echo
   echo Pushing pixelmilk/mesos:${TAG}
   docker push pixelmilk/mesos:${TAG} || exit $?
-
-# agent, master
-  for role in agent master; do
-    echo
-    echo Pushing pixelmilk/mesos-${role}:${TAG}
-    docker push pixelmilk/mesos-${role}:${TAG}|| exit $?
-  done
-
 }
 
 # login docker before push
