@@ -10,7 +10,6 @@ build() {
   docker build \
     --compress \
     -t pixelmilk/mesos \
-    -f base/Dockerfile \
     --build-arg MESOS_VERSION=${TAG} \
     . || exit $?
 
