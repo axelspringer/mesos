@@ -9,18 +9,16 @@ build() {
   docker build \
     --compress \
     --squash \
-    -t pixelmilk/mesos \
+    -t axelspringer/mesos \
     --build-arg MESOS_VERSION=${TAG} \
     . || exit $?
 
 # tag
   echo
-  echo Tagging pixelmilk/mesos:${TAG}
-  docker tag pixelmilk/mesos pixelmilk/mesos:${TAG} \
+  echo Tagging axelspringer/mesos:${TAG}
+  docker tag axelspringer/mesos axelspringer/mesos:${TAG} \
     || exit $?
 }
 
-# curl http://169.254.169.254/latest/meta-data/local-ipv4
-
 #     Mesos version
-build "1.3.1"
+build "1.4.0"
