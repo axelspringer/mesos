@@ -21,4 +21,4 @@ build() {
 }
 
 #     Mesos version
-build "1.4.0"
+build "1.4.1"
